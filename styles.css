@@ -1,15 +1,177 @@
+
+/* Configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background: #f0f4f8;
-    text-align: center;
-    padding: 50px;
+    background: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    color: #0077b6;
 }
-h1 { color: #2563eb; }
+
+/* Tarjeta vertical */
+.tarjeta {
+    background-color: #ffffff;
+    color: #0077b6;
+    width: 100%;
+    max-width: 400px;
+    min-height: 650px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin: auto;
+}
+
+/* Encabezado */
+.encabezado {
+    background: linear-gradient(135deg, #123c69, #0077b6);
+    color: #ffffff;
+    padding: 30px 15px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.icono {
+    font-size: 35px;
+    font-weight: bold;
+    color: #90e0ef;
+    margin-bottom: 10px;
+}
+
+.encabezado h1 {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.profesion {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.rol {
+    font-size: 14px;
+    color: #f8e0ca;
+}
+
+/* Presentación */
+.presentacion {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.presentacion h2 {
+    font-size: 20px;
+    color: #0077b6;
+    margin-bottom: 12px;
+}
+
+.presentacion p {
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* Áreas de interés */
+.habilidades {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.habilidades h2 {
+    font-size: 20px;
+    color: #0077b6;
+    margin-bottom: 12px;
+}
+
+.habilidades ul {
+    list-style-position: inside;
+    padding: 0;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.habilidades li {
+    margin-bottom: 8px;
+}
+
+/* Botón */
 button {
-    padding: 12px 20px;
-    background: #2563eb;
-    color: white;
+    display: block;
+    margin: 20px auto;
+    background-color: #0077b6;
+    color: #ffffff;
     border: none;
+    padding: 13px 22px;
     border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #023e8a;
+    transform: scale(1.04);
+}
+
+/* Mensaje de metas */
+.mensaje {
+    background-color: #eaf6ff;
+    color: #123c69;
+    padding: 18px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.mensaje h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.oculto {
+    display: none;
+}
+
+/* Pie de página */
+footer {
+    border-top: 1px solid #dddddd;
+    margin-top: 25px;
+    padding-top: 15px;
+    color: #607d8b;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+        align-items: flex-start;
+    }
+
+    .tarjeta {
+        max-width: 100%;
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .encabezado h1 {
+        font-size: 24px;
+    }
+
+    .presentacion p,
+    .habilidades ul {
+        font-size: 14px;
+    }
 }
