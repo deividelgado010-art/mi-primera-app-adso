@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
 body {
@@ -26,7 +27,7 @@ body {
     min-height: 650px;
     padding: 25px;
     border-radius: 20px;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 12px 35px #00000040;
     text-align: center;
     margin: auto;
 }
@@ -34,7 +35,7 @@ body {
 /* Encabezado */
 .encabezado {
     background: linear-gradient(135deg, #123c69, #0077b6);
-    color: #ffffff;
+    color: #0077b6);
     padding: 30px 15px;
     border-radius: 15px;
     margin-bottom: 25px;
@@ -60,11 +61,12 @@ body {
 
 .rol {
     font-size: 14px;
-    color: #f8e0ca;
+    color: #90e0ef;
 }
 
 /* Presentación */
 .presentacion {
+
     text-align: center;
     margin-bottom: 25px;
 }
@@ -90,6 +92,7 @@ body {
     font-size: 20px;
     color: #0077b6;
     margin-bottom: 12px;
+    text-align: center;
 }
 
 .habilidades ul {
@@ -101,6 +104,7 @@ body {
 
 .habilidades li {
     margin-bottom: 8px;
+    text-align: center;
 }
 
 /* Botón */
@@ -120,7 +124,8 @@ button {
 
 button:hover {
     background-color: #023e8a;
-    transform: scale(1.04);
+    transform: scale( 2.04);
+    text-align: center;
 }
 
 /* Mensaje de metas */
@@ -137,10 +142,12 @@ button:hover {
 .mensaje h2 {
     font-size: 18px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .oculto {
     display: none;
+    text-align: center;
 }
 
 /* Pie de página */
